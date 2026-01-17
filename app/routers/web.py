@@ -34,7 +34,9 @@ CATEGORIES = [
 @router.get("/")
 async def home(request: Request):
     """Landing page with service overview and examples."""
-    return templates.TemplateResponse("home.html", {"request": request, "categories": CATEGORIES})
+    return templates.TemplateResponse(
+        request=request, name="home.html", context={"categories": CATEGORIES}
+    )
 
 
 @router.get("/404")
@@ -52,9 +54,9 @@ async def web_404(request: Request, category: str | None = Query(None)):
         reason_data = await get_random_reason()
 
     return templates.TemplateResponse(
-        "404.html",
-        {
-            "request": request,
+        request=request,
+        name="404.html",
+        context={
             "message": reason_data["message"],
             "reason": reason_data["reason"],
             "category": reason_data.get("category", "modern"),

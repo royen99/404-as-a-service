@@ -1,18 +1,23 @@
 # 404-as-a-Service
 
+[![CI Tests](https://github.com/royen99/404-as-a-service/actions/workflows/ci.yml/badge.svg)](https://github.com/royen99/404-as-a-service/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/github/royen99/404-as-a-service/graph/badge.svg?token=9MHZ3BQ025)](https://codecov.io/github/royen99/404-as-a-service)[![Python 3.14+](https://img.shields.io/badge/python-3.14+-blue.svg)](https://www.python.org/downloads/)
+[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 > *Because even errors deserve personality*
 
 A microservice that serves creative, witty 404 errors for any website. Why settle for boring "Not Found" messages when you can have fun with them?
 
 ## Features
 
-- 🎲 **Random creative 404 messages** - 20+ hand-crafted reasons spanning 12 categories
-- 🎨 **CSS powered HTML UI** - Tailwind CSS-powered pages with category-specific themes & animations
-- 🚀 **FastAPI-powered** - Async, fast, and production-ready
-- 📦 **Containerized** - Docker support for easy deployment
-- 🔌 **Simple API** - Both JSON API and gorgeous HTML responses
-- 🎭 **Category Theming** - Each error category has unique colors, gradients, and animations
-- ✅ **Fully tested** - Comprehensive test coverage
+- **Random creative 404 messages** - 20+ hand-crafted reasons spanning 12 categories
+- **CSS powered HTML UI** - Tailwind CSS-powered pages with category-specific themes & animations
+- **FastAPI-powered** - Async, fast, and production-ready
+- **Containerized** - Docker support for easy deployment
+- **Simple API** - Both JSON API and gorgeous HTML responses
+- **Category Theming** - Each error category has unique colors, gradients, and animations
+- **Fully tested** - Comprehensive test coverage
 
 ## Quick Start
 

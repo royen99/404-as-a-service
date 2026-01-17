@@ -54,9 +54,9 @@ async def custom_404_handler(request: Request, exc):
         reason_data = await get_random_reason()
 
         return templates.TemplateResponse(
-            "404.html",
-            {
-                "request": request,
+            request=request,
+            name="404.html",
+            context={
                 "message": reason_data["message"],
                 "reason": reason_data["reason"],
                 "category": reason_data.get("category", "modern"),
