@@ -2,24 +2,25 @@
 Application configuration using Pydantic settings.
 Reads from environment variables with sensible defaults.
 """
+
 from pydantic_settings import BaseSettings
 from functools import lru_cache
 
 
 class Settings(BaseSettings):
     """App configuration - because hardcoded values are so 2010 😜"""
-    
+
     # App settings
     app_name: str = "404-as-a-Service"
     debug: bool = False
-    
+
     # Data paths
     reasons_file: str = "data/reasons.json"
-    
+
     # Server settings
     host: str = "0.0.0.0"
     port: int = 8000
-    
+
     class Config:
         env_file = ".env"
         case_sensitive = False

@@ -2,6 +2,7 @@
 API routes for JSON responses.
 External sites can call these endpoints to get 404 data.
 """
+
 from fastapi import APIRouter
 from app.services.reason_service import get_random_reason, get_all_reasons
 
@@ -12,16 +13,12 @@ router = APIRouter()
 async def get_404():
     """
     Get a random 404 error with a creative reason.
-    
+
     Returns:
         JSON with status_code, message, and reason
     """
     reason_data = await get_random_reason()
-    return {
-        "status_code": 404,
-        "error": "Not Found",
-        **reason_data
-    }
+    return {"status_code": 404, "error": "Not Found", **reason_data}
 
 
 @router.get("/404/random")
@@ -37,7 +34,4 @@ async def list_all_reasons():
     Useful for debugging or building your own selection logic.
     """
     reasons = await get_all_reasons()
-    return {
-        "total": len(reasons),
-        "reasons": reasons
-    }
+    return {"total": len(reasons), "reasons": reasons}

@@ -2,6 +2,7 @@
 Tests for API endpoints.
 Because untested code is just a future bug 🐛
 """
+
 import pytest
 from fastapi.testclient import TestClient
 
@@ -27,13 +28,13 @@ def test_get_404_endpoint(client: TestClient):
     response = client.get("/api/v1/404")
     assert response.status_code == 200
     data = response.json()
-    
+
     # Check structure
     assert "status_code" in data
     assert "error" in data
     assert "message" in data
     assert "reason" in data
-    
+
     # Validate values
     assert data["status_code"] == 404
     assert data["error"] == "Not Found"
@@ -53,12 +54,12 @@ def test_list_all_reasons(client: TestClient):
     response = client.get("/api/v1/reasons")
     assert response.status_code == 200
     data = response.json()
-    
+
     assert "total" in data
     assert "reasons" in data
     assert isinstance(data["reasons"], list)
     assert data["total"] == len(data["reasons"])
-    
+
     # Each reason should have required fields
     if data["reasons"]:
         reason = data["reasons"][0]
@@ -70,7 +71,7 @@ def test_undefined_route_returns_404(client: TestClient):
     """Any undefined route should return creative 404 (HTML by default)."""
     response = client.get("/this/does/not/exist")
     assert response.status_code == 404
-    
+
     # Should return HTML for browser clients
     assert "text/html" in response.headers["content-type"]
     assert "404" in response.text
@@ -78,13 +79,10 @@ def test_undefined_route_returns_404(client: TestClient):
 
 def test_undefined_route_json_with_header(client: TestClient):
     """Undefined route with JSON accept header should return JSON."""
-    response = client.get(
-        "/this/does/not/exist",
-        headers={"Accept": "application/json"}
-    )
+    response = client.get("/this/does/not/exist", headers={"Accept": "application/json"})
     assert response.status_code == 404
     data = response.json()
-    
+
     # Should have our custom 404 structure
     assert "error" in data
     assert "message" in data
@@ -97,7 +95,7 @@ def test_404_randomness(client: TestClient):
     for _ in range(10):
         response = client.get("/api/v1/404")
         responses.append(response.json()["message"])
-    
+
     # With 20 reasons, 10 requests should give us some variety
     # (Though technically could all be the same due to randomness)
     unique_messages = len(set(responses))
@@ -106,10 +104,7 @@ def test_404_randomness(client: TestClient):
 
 def test_api_json_accept_header(client: TestClient):
     """Requests with JSON accept header should get JSON response."""
-    response = client.get(
-        "/undefined/path",
-        headers={"Accept": "application/json"}
-    )
+    response = client.get("/undefined/path", headers={"Accept": "application/json"})
     assert response.status_code == 404
     assert response.headers["content-type"] == "application/json"
 

@@ -152,7 +152,7 @@ print(f"{error_data['message']}: {error_data['reason']}")
 
 Embed in your error page:
 ```html
-<iframe src="http://your-domain.com/404?category=tech-humor" 
+<iframe src="http://your-domain.com/404?category=tech-humor"
         style="width:100%; height:600px; border:none;">
 </iframe>
 ```

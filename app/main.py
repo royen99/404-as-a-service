@@ -2,6 +2,7 @@
 Main FastAPI application entry point.
 Serves creative 404 errors as both JSON API and HTML pages.
 """
+
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi.templating import Jinja2Templates
@@ -9,10 +10,8 @@ from pathlib import Path
 from app.routers import api, web
 from app.core.config import settings
 
-# Setup Jinja2 templates - because templating makes life easier 🎨
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 
-# Let's make 404s fun again 🚀
 app = FastAPI(
     title="404-as-a-Service",
     description="A microservice that serves creative 404 errors with personality",
@@ -36,26 +35,20 @@ async def health_check():
 async def custom_404_handler(request: Request, exc):
     """Catch-all 404 handler that serves creative error messages."""
     accept = request.headers.get("accept", "")
-    
+
     if "application/json" in accept or request.url.path.startswith("/api"):
         # Return JSON response for API clients
         from app.services.reason_service import get_random_reason
+
         reason_data = await get_random_reason()
-        return JSONResponse(
-            status_code=404,
-            content={
-                "error": "Not Found",
-                "status_code": 404,
-                **reason_data
-            }
-        )
+        return JSONResponse(status_code=404, content={"error": "Not Found", "status_code": 404, **reason_data})
     else:
-        # Render beautiful HTML for browser clients 🎨
+        # Render HTML for browser clients
         from app.services.reason_service import get_random_reason
         import random
-        
+
         reason_data = await get_random_reason()
-        
+
         return templates.TemplateResponse(
             "404.html",
             {
@@ -63,7 +56,7 @@ async def custom_404_handler(request: Request, exc):
                 "message": reason_data["message"],
                 "reason": reason_data["reason"],
                 "category": reason_data.get("category", "modern"),
-                "visitor_count": random.randint(1337, 999999)  # Fun fake stat 😜
+                "visitor_count": random.randint(1337, 999999),  # Fun fake stat
             },
-            status_code=404
+            status_code=404,
         )
