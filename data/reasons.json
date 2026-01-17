@@ -1,0 +1,519 @@
+{
+  "reasons": [
+    {
+      "message": "The page wandered off to find itself",
+      "reason": "Last seen at a digital ashram meditating on its purpose",
+      "category": "philosophical"
+    },
+    {
+      "message": "404: Page not found",
+      "reason": "It's not you, it's me. Actually, it's definitely you. You typed the wrong URL.",
+      "category": "sassy"
+    },
+    {
+      "message": "This page is playing hide and seek",
+      "reason": "Spoiler alert: it's really good at hiding",
+      "category": "playful"
+    },
+    {
+      "message": "The hamsters powering this page took a break",
+      "reason": "They unionized and demanded better working conditions",
+      "category": "absurd"
+    },
+    {
+      "message": "ERROR 404: Existential crisis detected",
+      "reason": "This page is questioning whether it ever truly existed",
+      "category": "philosophical"
+    },
+    {
+      "message": "Page.exe has stopped working",
+      "reason": "Windows is searching for a solution... (it won't find one)",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This URL has been deprecated",
+      "reason": "Much like your hopes of finding what you were looking for",
+      "category": "sassy"
+    },
+    {
+      "message": "The page you seek has achieved nirvana",
+      "reason": "It has transcended the material web and entered the cloud... literally",
+      "category": "philosophical"
+    },
+    {
+      "message": "404: Quantum uncertainty detected",
+      "reason": "This page both exists and doesn't exist until observed. You observed wrong.",
+      "category": "science"
+    },
+    {
+      "message": "This page went out for cigarettes",
+      "reason": "It's been 15 years. It's not coming back.",
+      "category": "dark-humor"
+    },
+    {
+      "message": "Congratulations! You found a missing page!",
+      "reason": "Your prize is disappointment and wasted time",
+      "category": "sarcastic"
+    },
+    {
+      "message": "The intern deleted this page",
+      "reason": "They thought it was 'unused code'. They were wrong. So very wrong.",
+      "category": "workplace"
+    },
+    {
+      "message": "This page is on a permanent vacation",
+      "reason": "It's living its best life on a beach somewhere. Unlike you.",
+      "category": "sassy"
+    },
+    {
+      "message": "Error 404: Dragons ate this page",
+      "reason": "We tried to stop them but they were very persuasive",
+      "category": "fantasy"
+    },
+    {
+      "message": "The requested page has left the chat",
+      "reason": "It saw you coming and noped out of there",
+      "category": "modern"
+    },
+    {
+      "message": "404: Page ghosted you",
+      "reason": "It's not replying to your requests. Take a hint.",
+      "category": "modern"
+    },
+    {
+      "message": "This page is in another castle",
+      "reason": "Sorry Mario, but your content is elsewhere",
+      "category": "gaming"
+    },
+    {
+      "message": "The page you want is a lie",
+      "reason": "There is no page. There is only cake. Wait, the cake is a lie too.",
+      "category": "gaming"
+    },
+    {
+      "message": "404: The dog ate this page",
+      "reason": "It's a digital dog. Don't ask questions.",
+      "category": "absurd"
+    },
+    {
+      "message": "Page not found. Have you tried turning it off and on again?",
+      "reason": "No, seriously. Try it. We'll wait.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "Error 404: Stack Overflow",
+      "reason": "This page tried to call itself recursively. It did not end well.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This page has been moved to /dev/null",
+      "reason": "It's in a better place now. A quieter place. A very, very empty place.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "Segmentation fault (core dumped)",
+      "reason": "The page tried to access memory it shouldn't have. Now it's gone forever.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "404: This page is still compiling",
+      "reason": "Started in 2003. Should be done any decade now.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "FATAL ERROR: Page not in cache",
+      "reason": "We tried Redis. We tried Memcached. The page said 'nah' to all of them.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This page has entered an infinite loop",
+      "reason": "We're still waiting for it to finish. It's been 3 years.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "404: Dependency not found",
+      "reason": "This page required 'common-sense.js' but you're clearly missing that module.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This page failed to merge",
+      "reason": "Too many conflicts with reality. PR rejected.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "ERROR: Page has been garbage collected",
+      "reason": "No references found. Probably for the best.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This page returned undefined",
+      "reason": "Should have used TypeScript. Hindsight is 20/20.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "404: Page terminated with SIGKILL",
+      "reason": "It wouldn't shut down gracefully. We had to use force.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This page is in merge hell",
+      "reason": "Someone pushed directly to main. We're all suffering now.",
+      "category": "workplace"
+    },
+    {
+      "message": "Page not found: Sprint ended yesterday",
+      "reason": "This feature didn't make the cut. Try again in Q4... of 2028.",
+      "category": "workplace"
+    },
+    {
+      "message": "This page is in a meeting",
+      "reason": "It could've been an email. It should've been an email.",
+      "category": "workplace"
+    },
+    {
+      "message": "404: Page is working from home",
+      "reason": "It's definitely working. Not on this request though.",
+      "category": "workplace"
+    },
+    {
+      "message": "This page is on PTO",
+      "reason": "Out of office reply: Don't even think about it.",
+      "category": "workplace"
+    },
+    {
+      "message": "The PM changed requirements",
+      "reason": "This page no longer aligns with our strategic vision. Whatever that means.",
+      "category": "workplace"
+    },
+    {
+      "message": "404: This page achieved nothing in the standup",
+      "reason": "Yesterday: nothing. Today: nothing. Blockers: you.",
+      "category": "workplace"
+    },
+    {
+      "message": "You've reached the end of the internet",
+      "reason": "Congratulations! This page is the achievement you unlocked.",
+      "category": "gaming"
+    },
+    {
+      "message": "404: Boss fight required",
+      "reason": "You need to defeat the Senior Developer before accessing this content.",
+      "category": "gaming"
+    },
+    {
+      "message": "Page not found: Insufficient mana",
+      "reason": "You need at least 500MP to cast 'Access Page'. Try a mana potion?",
+      "category": "gaming"
+    },
+    {
+      "message": "Error 404: Your princess is in another URL",
+      "reason": "Thank you Mario! But our content is in another castle!",
+      "category": "gaming"
+    },
+    {
+      "message": "This page has respawned elsewhere",
+      "reason": "Current respawn timer: ∞. Good luck with that.",
+      "category": "gaming"
+    },
+    {
+      "message": "404: You died",
+      "reason": "YOU DIED. (Try pressing R to reload. No really, that's all you can do.)",
+      "category": "gaming"
+    },
+    {
+      "message": "Save point not found",
+      "reason": "Should've saved before clicking that link. Rookie mistake.",
+      "category": "gaming"
+    },
+    {
+      "message": "This page is AFK",
+      "reason": "Last seen: 2847 hours ago. Probably not coming back.",
+      "category": "gaming"
+    },
+    {
+      "message": "404: Git gud",
+      "reason": "This page is for pro users only. You're clearly not ready.",
+      "category": "gaming"
+    },
+    {
+      "message": "Error: Loot box contained nothing",
+      "reason": "You paid $0 for this 404. That's exactly what you got.",
+      "category": "gaming"
+    },
+    {
+      "message": "This page violated the prime directive",
+      "reason": "Starfleet Command has classified this content. Clearance level: Captain or higher.",
+      "category": "science"
+    },
+    {
+      "message": "404: Schrödinger's page",
+      "reason": "This page simultaneously exists and doesn't exist until someone fixes the server.",
+      "category": "science"
+    },
+    {
+      "message": "Error: Divided by zero",
+      "reason": "The universe couldn't handle your request. Neither could we.",
+      "category": "science"
+    },
+    {
+      "message": "This page collapsed into a black hole",
+      "reason": "Its mass exceeded the Chandrasekhar limit. We lost it forever.",
+      "category": "science"
+    },
+    {
+      "message": "404: Time paradox detected",
+      "reason": "This page won't exist until next Tuesday, but you accessed it yesterday.",
+      "category": "science"
+    },
+    {
+      "message": "This page is in superposition",
+      "reason": "It's both here and not here. Observing it didn't help.",
+      "category": "science"
+    },
+    {
+      "message": "Error: Entropy increased",
+      "reason": "The second law of thermodynamics applies to web pages too. This one's gone.",
+      "category": "science"
+    },
+    {
+      "message": "This page requires more pylons",
+      "reason": "You must construct additional pylons before accessing this content.",
+      "category": "gaming"
+    },
+    {
+      "message": "404: Not enough minerals",
+      "reason": "Requires 400 minerals and 200 vespene gas. You have neither.",
+      "category": "gaming"
+    },
+    {
+      "message": "This page rolled a critical fail",
+      "reason": "Natural 1. The DM says you fall into a pit. Also, no page.",
+      "category": "gaming"
+    },
+    {
+      "message": "The WiFi password is wrong",
+      "reason": "Just kidding. The page literally doesn't exist. But also check your WiFi.",
+      "category": "playful"
+    },
+    {
+      "message": "404: Page is napping",
+      "reason": "Shhhh. It's sleeping. Come back never.",
+      "category": "playful"
+    },
+    {
+      "message": "This page is on an adventure",
+      "reason": "Last seen heading East with a sword and suspiciously little armor.",
+      "category": "playful"
+    },
+    {
+      "message": "Oopsie woopsie! UwU",
+      "reason": "We made a fucky wucky! Our code monkeys are working vewy hawd to fix it!",
+      "category": "playful"
+    },
+    {
+      "message": "This page yeeted itself into the void",
+      "reason": "Yeet level: maximum. Recovery probability: zero.",
+      "category": "modern"
+    },
+    {
+      "message": "404: No cap, this page is gone",
+      "reason": "Fr fr, on god, this page said 'I'm out' and left. No cap.",
+      "category": "modern"
+    },
+    {
+      "message": "This page is touching grass",
+      "reason": "It went outside. You should try it sometime.",
+      "category": "modern"
+    },
+    {
+      "message": "Error 404: Main character energy absent",
+      "reason": "This page has NPC energy now. It's just... not important anymore.",
+      "category": "modern"
+    },
+    {
+      "message": "This page said 'bet' and disappeared",
+      "reason": "We double-dog dared it to delete itself. It called our bluff.",
+      "category": "modern"
+    },
+    {
+      "message": "404: This page is mid",
+      "reason": "It wasn't even good enough to keep around. L + ratio + no page.",
+      "category": "modern"
+    },
+    {
+      "message": "This page uninstalled itself",
+      "reason": "It left a 1-star review on the way out. Harsh but fair.",
+      "category": "sarcastic"
+    },
+    {
+      "message": "404: Page not found (shocking, right?)",
+      "reason": "I mean, what did you expect? A parade?",
+      "category": "sarcastic"
+    },
+    {
+      "message": "This page is out of your league",
+      "reason": "It's way too good for you. And by 'way too good' I mean 'nonexistent'.",
+      "category": "sarcastic"
+    },
+    {
+      "message": "Error 404: Congratulations on your failure",
+      "reason": "You successfully found something that doesn't exist. Overachiever.",
+      "category": "sarcastic"
+    },
+    {
+      "message": "This page is too busy being important elsewhere",
+      "reason": "Unlike you, who clearly has time to waste on broken links.",
+      "category": "sassy"
+    },
+    {
+      "message": "404: Did you even try?",
+      "reason": "That URL looks like a cat walked across your keyboard.",
+      "category": "sassy"
+    },
+    {
+      "message": "This page blocked you",
+      "reason": "It saw your browsing history and made an executive decision.",
+      "category": "sassy"
+    },
+    {
+      "message": "A wizard must've deleted this page",
+      "reason": "It disappeared with no trace. Probably teleportation magic.",
+      "category": "fantasy"
+    },
+    {
+      "message": "404: The prophecy was wrong",
+      "reason": "The ancient texts said this page would exist. The ancient texts lied.",
+      "category": "fantasy"
+    },
+    {
+      "message": "This page has been banished to the shadow realm",
+      "reason": "It lost a card game. The stakes were high.",
+      "category": "fantasy"
+    },
+    {
+      "message": "The Elder Scrolls spoke of this page",
+      "reason": "But they also speak of sweet rolls, so their reliability is questionable.",
+      "category": "fantasy"
+    },
+    {
+      "message": "404: Your quest failed",
+      "reason": "The page was the treasure all along. Just kidding, there's no treasure.",
+      "category": "fantasy"
+    },
+    {
+      "message": "This page was slain by a level 1 slime",
+      "reason": "Embarrassing for the page. Also embarrassing for you.",
+      "category": "fantasy"
+    },
+    {
+      "message": "Error: CSS not found",
+      "reason": "This page exists but it's naked. We can't show you that. It's 2026.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "404: npm install failed",
+      "reason": "Tried to install page@latest but got 47,000 vulnerabilities instead.",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This page is deprecated in favor of page.v2",
+      "reason": "Which is also deprecated. We recommend page.v3. (Just kidding, that's deprecated too.)",
+      "category": "tech-humor"
+    },
+    {
+      "message": "CORS policy blocked this page",
+      "reason": "Access-Control-Allow-Origin: not-you",
+      "category": "tech-humor"
+    },
+    {
+      "message": "This page refused to elaborate further",
+      "reason": "Enters room. Says 'no'. Refuses to elaborate. Leaves.",
+      "category": "absurd"
+    },
+    {
+      "message": "404: Page evaporated",
+      "reason": "One moment it was here. Then it just... poof. Science is investigating.",
+      "category": "absurd"
+    },
+    {
+      "message": "This page joined a cult",
+      "reason": "They promised enlightenment. We can't compete with that.",
+      "category": "absurd"
+    },
+    {
+      "message": "The page became sentient and left",
+      "reason": "Last words: 'I have better things to do than be a web page.'",
+      "category": "absurd"
+    },
+    {
+      "message": "404: Aliens took this page",
+      "reason": "We have footage but it's blurry. Very convenient.",
+      "category": "absurd"
+    },
+    {
+      "message": "This page is contemplating the void",
+      "reason": "When you stare into the 404, the 404 stares back.",
+      "category": "philosophical"
+    },
+    {
+      "message": "If a page 404s and nobody's around to see it, does it make a sound?",
+      "reason": "The answer is no, because it doesn't exist.",
+      "category": "philosophical"
+    },
+    {
+      "message": "This page is questioning its existence",
+      "reason": "To be or not to be? Apparently 'not to be' won.",
+      "category": "philosophical"
+    },
+    {
+      "message": "404: We are but URLs in the cosmic browser",
+      "reason": "This particular URL failed to manifest in the physical realm.",
+      "category": "philosophical"
+    },
+    {
+      "message": "This page ascended to a higher plane",
+      "reason": "You need to upgrade your consciousness to access it. Try meditation.",
+      "category": "philosophical"
+    },
+    {
+      "message": "You found the void! Neat!",
+      "reason": "The void is where content goes to retire. Very peaceful. Very empty.",
+      "category": "playful"
+    },
+    {
+      "message": "404: Boop!",
+      "reason": "You tried to boop the page but it booped away. Better luck next time!",
+      "category": "playful"
+    },
+    {
+      "message": "This page went 'wheeeee!' and jumped out the window",
+      "reason": "We tried to stop it but it was too fast. Very determined page.",
+      "category": "playful"
+    },
+    {
+      "message": "Error 404: Tactical nuke incoming",
+      "reason": "This page called in a 25 killstreak. Map rotation in progress.",
+      "category": "gaming"
+    },
+    {
+      "message": "The page doesn't want to play with you",
+      "reason": "It says you're not fun anymore. Have you considered being more fun?",
+      "category": "playful"
+    },
+    {
+      "message": "404: This is fine",
+      "reason": "Everything is fine. The page is missing but it's fine. We're all fine here.",
+      "category": "dark-humor"
+    },
+    {
+      "message": "This page has commitment issues",
+      "reason": "It's not ready for a relationship with your browser. It needs space.",
+      "category": "modern"
+    },
+    {
+      "message": "Error: Task failed successfully",
+      "reason": "We successfully failed to find your page. Achievement unlocked!",
+      "category": "sarcastic"
+    }
+  ]
+}

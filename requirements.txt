@@ -1,0 +1,17 @@
+fastapi>=0.128.0
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+httpx
+
+# Code quality
+ruff
+
+# Future: Add when implementing HTML templates
+jinja2

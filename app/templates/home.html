@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}404-as-a-Service - Fun 404 Errors for Everyone{% endblock %}
+
+{% block body_class %}bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl w-full">
+    <!-- Hero Section -->
+    <div class="text-center mb-12">
+        <h1 class="text-6xl md:text-8xl font-black text-white mb-4 float-animation">
+            404-as-a-Service
+        </h1>
+        <p class="text-2xl md:text-3xl text-white/90 mb-2">
+            Because even errors deserve personality 🎯
+        </p>
+        <p class="text-lg text-white/70">
+            Serving creative 404 pages since 2026
+        </p>
+    </div>
+    
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div class="text-4xl mb-4">🎲</div>
+            <h3 class="text-xl font-bold text-white mb-2">Random Messages</h3>
+            <p class="text-white/80">20+ hand-crafted 404 reasons across 12 categories</p>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div class="text-4xl mb-4">🎨</div>
+            <h3 class="text-xl font-bold text-white mb-2">Beautiful UI</h3>
+            <p class="text-white/80">Tailwind-powered designs with category-specific themes</p>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div class="text-4xl mb-4">🔌</div>
+            <h3 class="text-xl font-bold text-white mb-2">Easy API</h3>
+            <p class="text-white/80">Simple JSON endpoints for seamless integration</p>
+        </div>
+    </div>
+    
+    <!-- Quick Start -->
+    <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 mb-12">
+        <h2 class="text-3xl font-bold text-white mb-6 text-center">Try It Out</h2>
+        
+        <div class="space-y-4 mb-6">
+            <div class="bg-gray-900/50 rounded-lg p-4">
+                <p class="text-white/70 text-sm mb-2">Random 404 (HTML)</p>
+                <code class="text-green-400 font-mono">GET /any/undefined/path</code>
+            </div>
+            
+            <div class="bg-gray-900/50 rounded-lg p-4">
+                <p class="text-white/70 text-sm mb-2">Random 404 (JSON)</p>
+                <code class="text-green-400 font-mono">GET /api/v1/404</code>
+            </div>
+            
+            <div class="bg-gray-900/50 rounded-lg p-4">
+                <p class="text-white/70 text-sm mb-2">Specific Category (HTML)</p>
+                <code class="text-green-400 font-mono">GET /404?category=gaming</code>
+            </div>
+            
+            <div class="bg-gray-900/50 rounded-lg p-4">
+                <p class="text-white/70 text-sm mb-2">List All Reasons</p>
+                <code class="text-green-400 font-mono">GET /api/v1/reasons</code>
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="/404" 
+               class="px-6 py-3 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105">
+                See Random 404
+            </a>
+            <a href="/docs" 
+               class="px-6 py-3 bg-white/20 backdrop-blur text-white rounded-full font-semibold hover:bg-white/30 transition-all duration-300 hover:scale-105 border-2 border-white/30">
+                API Docs
+            </a>
+        </div>
+    </div>
+    
+    <!-- Categories Showcase -->
+    <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12">
+        <h2 class="text-3xl font-bold text-white mb-6 text-center">Available Categories</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {% for cat in categories %}
+            <a href="/404?category={{ cat }}" 
+               class="bg-{{ cat }}/20 hover:bg-{{ cat }}/30 backdrop-blur rounded-lg p-4 text-center transition-all duration-300 hover:scale-105 border-2 border-{{ cat }}/30">
+                <span class="text-white font-semibold text-sm">{{ cat }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="mt-12 text-center">
+        <p class="text-white/60 text-sm mb-4">
+            Open source • Built with FastAPI & Tailwind CSS • Made with 💜
+        </p>
+        <div class="flex justify-center gap-4 text-white/80">
+            <a href="/health" class="hover:text-white transition">Health Check</a>
+            <span>•</span>
+            <a href="/api/v1/reasons" class="hover:text-white transition">All Reasons</a>
+            <span>•</span>
+            <a href="https://github.com" class="hover:text-white transition">GitHub</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    // Add some subtle parallax effect
+    document.addEventListener('mousemove', function(e) {
+        const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+        const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+        
+        const floatElements = document.querySelectorAll('.float-animation');
+        floatElements.forEach(el => {
+            el.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    });
+</script>
+{% endblock %}
