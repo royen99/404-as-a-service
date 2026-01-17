@@ -4,7 +4,8 @@ External sites can call these endpoints to get 404 data.
 """
 
 from fastapi import APIRouter
-from app.services.reason_service import get_random_reason, get_all_reasons
+
+from app.services.reason_service import get_all_reasons, get_random_reason
 
 router = APIRouter()
 

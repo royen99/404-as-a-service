@@ -5,14 +5,14 @@ Keeps routes thin and testable.
 
 import json
 import random
-from pathlib import Path
-from typing import Dict, List
 from functools import lru_cache
+from pathlib import Path
+
 from app.core.config import settings
 
 
-@lru_cache()
-def _load_reasons() -> List[Dict[str, str]]:
+@lru_cache
+def _load_reasons() -> list[dict[str, str]]:
     """
     Load reasons from JSON file and cache them.
     """
@@ -28,12 +28,12 @@ def _load_reasons() -> List[Dict[str, str]]:
             }
         ]
 
-    with open(reasons_path, "r") as f:
+    with open(reasons_path) as f:
         data = json.load(f)
         return data.get("reasons", [])
 
 
-async def get_random_reason() -> Dict[str, str]:
+async def get_random_reason() -> dict[str, str]:
     """
     Get a random 404 reason.
 
@@ -44,12 +44,12 @@ async def get_random_reason() -> Dict[str, str]:
     return random.choice(reasons)
 
 
-async def get_all_reasons() -> List[Dict[str, str]]:
+async def get_all_reasons() -> list[dict[str, str]]:
     """Get all available 404 reasons."""
     return _load_reasons()
 
 
-async def get_random_reason_by_category(category: str) -> Dict[str, str]:
+async def get_random_reason_by_category(category: str) -> dict[str, str]:
     """
     Get a random 404 reason from a specific category.
     Falls back to random if category not found.

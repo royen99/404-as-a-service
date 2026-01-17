@@ -3,11 +3,11 @@ Web UI routes for HTML responses.
 Renders beautiful 404 pages for browser clients with category-specific themes.
 """
 
-from fastapi import APIRouter, Request, Query
-from fastapi.templating import Jinja2Templates
-from pathlib import Path
-from typing import Optional
 import random
+from pathlib import Path
+
+from fastapi import APIRouter, Query, Request
+from fastapi.templating import Jinja2Templates
 
 router = APIRouter()
 
@@ -38,7 +38,7 @@ async def home(request: Request):
 
 
 @router.get("/404")
-async def web_404(request: Request, category: Optional[str] = Query(None)):
+async def web_404(request: Request, category: str | None = Query(None)):
     """
     Render a pretty HTML 404 page.
     Optional category parameter for themed 404s.

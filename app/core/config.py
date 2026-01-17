@@ -3,8 +3,9 @@ Application configuration using Pydantic settings.
 Reads from environment variables with sensible defaults.
 """
 
-from pydantic_settings import BaseSettings
 from functools import lru_cache
+
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
@@ -26,7 +27,7 @@ class Settings(BaseSettings):
         case_sensitive = False
 
 
-@lru_cache()
+@lru_cache
 def get_settings() -> Settings:
     """Cache settings to avoid reading .env multiple times."""
     return Settings()

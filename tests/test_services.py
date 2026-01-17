@@ -3,7 +3,13 @@ Tests for reason service logic.
 """
 
 import pytest
-from app.services.reason_service import get_random_reason, get_all_reasons, get_random_reason_by_category, clear_cache
+
+from app.services.reason_service import (
+    clear_cache,
+    get_all_reasons,
+    get_random_reason,
+    get_random_reason_by_category,
+)
 
 
 @pytest.mark.asyncio

@@ -3,12 +3,13 @@ Main FastAPI application entry point.
 Serves creative 404 errors as both JSON API and HTML pages.
 """
 
+from pathlib import Path
+
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi.templating import Jinja2Templates
-from pathlib import Path
+
 from app.routers import api, web
-from app.core.config import settings
 
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 
@@ -41,11 +42,14 @@ async def custom_404_handler(request: Request, exc):
         from app.services.reason_service import get_random_reason
 
         reason_data = await get_random_reason()
-        return JSONResponse(status_code=404, content={"error": "Not Found", "status_code": 404, **reason_data})
+        return JSONResponse(
+            status_code=404, content={"error": "Not Found", "status_code": 404, **reason_data}
+        )
     else:
         # Render HTML for browser clients
-        from app.services.reason_service import get_random_reason
         import random
+
+        from app.services.reason_service import get_random_reason
 
         reason_data = await get_random_reason()
 

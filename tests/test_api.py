@@ -3,7 +3,6 @@ Tests for API endpoints.
 Because untested code is just a future bug 🐛
 """
 
-import pytest
 from fastapi.testclient import TestClient
 
 
