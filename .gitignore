@@ -33,6 +33,7 @@ wheels/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
+.github/copilot-instructions.md
 *.egg
 MANIFEST
 
@@ -225,4 +226,3 @@ config.json
 .DS_Store
 .env
 .db
-.github/
