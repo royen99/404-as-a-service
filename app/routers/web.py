@@ -34,9 +34,7 @@ CATEGORIES = [
 @router.get("/")
 async def home(request: Request):
     """Landing page with service overview and examples."""
-    return templates.TemplateResponse(
-        request=request, name="home.html", context={"categories": CATEGORIES}
-    )
+    return templates.TemplateResponse(request=request, name="home.html", context={"categories": CATEGORIES})
 
 
 @router.get("/404")

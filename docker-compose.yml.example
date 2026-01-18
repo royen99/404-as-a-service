@@ -24,19 +24,3 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-
-  # Future: Add PostgreSQL when needed
-  # db:
-  #   image: postgres:16-alpine
-  #   container_name: 404-db
-  #   environment:
-  #     POSTGRES_USER: 404user
-  #     POSTGRES_PASSWORD: 404pass
-  #     POSTGRES_DB: 404db
-  #   volumes:
-  #     - pgdata:/var/lib/postgresql/data
-  #   ports:
-  #     - "5432:5432"
-
-# volumes:
-#   pgdata:

@@ -9,7 +9,6 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    """App configuration - because hardcoded values are so 2010 😜"""
 
     # App settings
     app_name: str = "404-as-a-Service"

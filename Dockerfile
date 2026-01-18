@@ -1,6 +1,3 @@
-# Multi-stage build for production-ready container
-# Because bloated images are for amateurs 🚀
-
 FROM python:3.14-slim as builder
 
 WORKDIR /build
@@ -25,7 +22,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY app/ ./app/
 COPY data/ ./data/
 
-# Create non-root user (security best practices, yo)
+# Create non-root user
 RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
 USER appuser
 

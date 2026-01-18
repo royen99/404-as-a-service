@@ -4,6 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}404-as-a-Service{% endblock %}</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{% block description %}A microservice that serves creative, witty 404 errors with personality. Beautiful themed pages and JSON API for any website.{% endblock %}">
+    <meta name="keywords" content="404 error, error page, custom 404, funny 404, error service, FastAPI, microservice, REST API">
+    <meta name="author" content="404-as-a-Service">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{% block og_url %}{{ request.url }}{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}404-as-a-Service - Creative Error Pages{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Making 404 errors fun with creative messages, beautiful themes, and easy API integration.{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}{{ request.url.scheme }}://{{ request.url.netloc }}/static/og-image.png{% endblock %}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{% block twitter_url %}{{ request.url }}{% endblock %}">
+    <meta property="twitter:title" content="{% block twitter_title %}404-as-a-Service - Creative Error Pages{% endblock %}">
+    <meta property="twitter:description" content="{% block twitter_description %}Making 404 errors fun with creative messages, beautiful themes, and easy API integration.{% endblock %}">
+    <meta property="twitter:image" content="{% block twitter_image %}{{ request.url.scheme }}://{{ request.url.netloc }}/static/og-image.png{% endblock %}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{% block canonical %}{{ request.url }}{% endblock %}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
 
     <!-- Tailwind CSS CDN - because life's too short for complicated builds -->
     <script src="https://cdn.tailwindcss.com"></script>

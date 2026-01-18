@@ -16,15 +16,15 @@ jobs:
       with:
         python-version: "3.14"
         cache: 'pip'
-    
+
     - name: Install Ruff
       run: |
         pip install ruff
-    
+
     - name: Run Ruff linter
       run: |
         ruff check . --output-format=github
-    
+
     - name: Run Ruff formatter check
       run: |
         ruff format --check .

@@ -42,9 +42,7 @@ async def custom_404_handler(request: Request, exc):
         from app.services.reason_service import get_random_reason
 
         reason_data = await get_random_reason()
-        return JSONResponse(
-            status_code=404, content={"error": "Not Found", "status_code": 404, **reason_data}
-        )
+        return JSONResponse(status_code=404, content={"error": "Not Found", "status_code": 404, **reason_data})
     else:
         # Render HTML for browser clients
         import random

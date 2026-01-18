@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}404 - {{ message }}{% endblock %}
+{% block title %}404 - {{ message }} | 404-as-a-Service{% endblock %}
+
+{% block description %}{{ message }} - {{ reason }} | Creative 404 error page from 404-as-a-Service with {{ category }} theme.{% endblock %}
+
+{% block og_title %}404 Error: {{ message }}{% endblock %}
+{% block og_description %}{{ reason }}{% endblock %}
+
+{% block twitter_title %}404 Error: {{ message }}{% endblock %}
+{% block twitter_description %}{{ reason }}{% endblock %}
 
 {% block body_class %}bg-gradient-{{ category }}{% endblock %}
 
