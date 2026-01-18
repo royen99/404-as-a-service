@@ -9,7 +9,6 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-
     # App settings
     app_name: str = "404-as-a-Service"
     debug: bool = False
